@@ -1,0 +1,58 @@
+= IDN Spatial Data ETL
+
+This repository contains source data and scripts for the generation of spatial datasets in a particular form.
+
+These spatial datasets form part of the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s catalogue of data. See https://idnau.org for catalogue access.
+
+These datasets are public spatial datasets that come in various forms - Excel spreadsheets, File GeoDatabases etc. - and the scripts here convert them into spatial [Semantic Web] data compatible with https://www.ga.gov.au[Geoscience Australia's] https://geoscienceaustralia.github.io/fsdf-supermodel/supermodel.html[Digital Atlas of Australia (DAA)'s data model].
+
+The conversion scripts here are all quite similar. They use Python scripts which:
+
+* read the source data
+** using appropriate adaptors from public Python packages
+* extract information relevant to the DAA data model
+** see the https://geoscienceaustralia.github.io/fsdf-supermodel/supermodel.html#_backbone_model_2[FSDF Backbone Model]
+* formulate https://www.w3.org/RDF/[RDF] data
+** using Python's https://github.com/rdflib/rdflib/[RDFLib library]
+** as an in-memory graph
+* save the data to a file
+** combining it with static metadata for the dataset stored in an RDF file
+* validate the data
+** according to the https://geoscienceaustralia.github.io/fsdf-supermodel/supermodel.html#_validation_2[FSDF Backbone Model's compounded validator]
+
+Each dataset's source data, scripts, static metadata and results are stored per-dataset in folders within `datasets/` in this repository.
+
+== Usage Technical Details
+This repository's scripts are https://www.python.org[Python scripts] that are compatible with https://www.python.org/downloads/release/python-3100/[Python 3.10] and use the https://python-poetry.org[Poetry] python package manager.
+
+To run these scripts, you will need to:
+
+. https://www.w3docs.com/learn-git/git-clone.html[clone] this repository to your local computer
+. establish a Python environment with all the dependent packages
+.. the Poetry documentation describes this
+. execute the scripts
+.. you can probably just run `~$ python {DATASET-ID}-etl.py` in the `scripts/` directory for aech dataset
+. check the `data/` folder in each dataset's folder
+.. for {DATASET-ID}.ttl - the resultant data file
+
+The folder `background-rdf/` contains ontologies that should be loaded with the spatial data to give labels to properties.
+
+== License & Rights
+
+The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details.
+
+All content is &copy; Indigenous Data Network, 2022
+
+== Contacts
+
+Initial technical development of this work is being undertaken by the following, for the Indigenous Data Network:
+
+**Nicholas J. Car** +
+*Data Architect* +
+https://kurrawong.net[Kurrawong AI] +
+nick@kurrawong.net  
+
+**Sandra Silcot** +
+*Analyst* +
+University of Melbourne +
+Indigenous Data Network +

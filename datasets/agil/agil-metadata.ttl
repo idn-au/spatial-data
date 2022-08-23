@@ -1,0 +1,38 @@
+PREFIX agil: <https://linked.data.gov.au/dataset/idnc/agil/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofab: <https://linked.data.gov.au/def/geofabric#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sand: <http://example.com/dataset/sandgate/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7>
+    a dcat:Dataset ;
+    dcterms:description """This dataset has been developed by the Australian Government as an authoritative source of indigenous location names across Australia. It is sponsored by the Spatial Policy Branch within the Department of Communications and managed solely by the Department of Human Services.
+
+The dataset is designed to support the accurate positioning, consistent reporting, and effective delivery of Australian Government programs and services to indigenous locations.
+
+The dataset contains Preferred and Alternate names for indigenous locations where Australian Government programs and services have been, are being, or may be provided. The Preferred name will always default to a State or Territory jurisdiction's gazetted name so the term 'preferred' does not infer that this is the locally known name for the location. Similarly, locational details are aligned, where possible, with those published in State and Territory registers.
+
+This dataset is NOT a complete listing of all locations at which indigenous people reside. Town and city names are not included in the dataset. The dataset contains names that represent indigenous communities, outstations, defined indigenous areas within a town or city or locations where services have been provided."""@en ;
+    dcterms:identifier "AGIL"^^xsd:token ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;  # Australia
+    dcterms:title "Australian Government Indigenous Programs & Policy Locations (AGIL)"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
+    ] ;
+    rdfs:member agil:point-locations ;
+.
+
+agil:point-locations
+    a geo:FeatureCollection ;
+    dcterms:description "All AGIL locations as points"@en ;
+    dcterms:identifier "point-locations"^^xsd:token ;
+    dcterms:title "AGIL point locations"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
+    ] ;
+.
