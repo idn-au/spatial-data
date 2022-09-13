@@ -7,12 +7,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sand: <http://example.com/dataset/sandgate/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idnc/ndt>
+<https://linked.data.gov.au/dataset/idnc/NNTT>
     a dcat:Dataset ;
-    dcterms:description """Native Title Determination Areas"""@en ;
-    dcterms:identifier "NDT"^^xsd:token ;
+dcterms:description """Len says Marcia may need to negotiate their agreement to interface this with loc-i.
+
+Query -- given NNTT provides a data model and comprehensive downloads under CC license already, what needs to be negotiated? Perhaps some way of being notified of changes and updates would be beneficial. See their downloads page: http://www.nntt.gov.au/assistance/Geospatial/Pages/DataDownload.aspx and the Copyright page.""" ;
+    dcterms:identifier "NNTT"^^xsd:token ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;  # Australia
-    dcterms:title "Native Title Determination Areas"@en ;
+    dcterms:title "Native Title Databases at the National Native Title Tribunal"@en ;
     geo:hasBoundingBox [
         a geo:Geometry ;
         geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
