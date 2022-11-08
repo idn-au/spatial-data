@@ -32,8 +32,8 @@ if __name__ == "__main__":
         # Geometry
         geom = BNode()
         g.add((geom, RDF.type, GEO.Geometry))
-        # wkt = f'POINT ({row["LONGITUDE"]} {row["LATITUDE"]})'
-        # g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
+        wkt = f'POINT ({row["LONGITUDE"]} {row["LATITUDE"]})'
+        g.add((geom, GEO.asWKT, Literal(wkt, datatype=GEO.wktLiteral)))
         geojson = f'{{"type": "Point", "coordinates": [{row["LONGITUDE"]}, {row["LATITUDE"]}]}}'
         g.add((geom, GEO.asGeoJSON, Literal(geojson, datatype=GEO.geoJSONLiteral)))
 

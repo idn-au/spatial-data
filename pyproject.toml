@@ -7,6 +7,9 @@ license = "CC-BY 4.0"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+rdflib = "^6.2.0"
+pandas = "^1.4.4"
+pyshacl = "^0.20.0"
 openpyxl = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
