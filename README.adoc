@@ -4,6 +4,11 @@ This repository contains source data, data generation scripts and final data for
 
 These datasets are accessed live, online, via the IDN's Demonstration Catalogue. See https://idnau.org for access.
 
+== Datasets
+
+* Australian Government Indigenous Programs & Policy Locations (AGIL)
+* Native Title Databases at the National Native Title Tribunal
+
 == Data Folders
 
 Each dataset in this repository is stored in a folder within the top-level folder `datasets/`, for example the "Australian Government Indigenous Programs & Policy Locations" (AGIL) dataset" is stored in `datasets/agil/`.
@@ -15,6 +20,9 @@ Each dataset folder has several folders and a file:
 * `scripts/` - Python and perhaps other scripts to produce the final data
 * `source/` - source data for the dataset, if we have it and are allowed to share it
 ** could be Excel files, SHAPE files etc.
+* `{DATASET-ID}-metadata.ttl` - an RDF file containing some basic Dataset and at least one Feature Collection's metadata
+* to be combined with the dataset's data by the scripts
+* included in the final RDF data thus not needed for data use
 
 The top-level folder `background-rdf/` contains ontologies that should be loaded with the spatial data to give labels to properties.
 
@@ -63,12 +71,12 @@ All content is &copy; Indigenous Data Network, 2022
 
 Initial technical development of this work is being undertaken by the following, for the Indigenous Data Network:
 
+**Sandra Silcot** +
+*Data Custodian* +
+University of Melbourne +
+Indigenous Data Network +
+
 **Nicholas J. Car** +
 *Data Architect* +
 https://kurrawong.net[Kurrawong AI] +
-nick@kurrawong.net  
-
-**Sandra Silcot** +
-*Analyst* +
-University of Melbourne +
-Indigenous Data Network +
+nick@kurrawong.net
