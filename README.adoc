@@ -1,10 +1,28 @@
-= IDN Spatial Data ETL
+= IDN Spatial Data
 
-This repository contains source data and scripts for the generation of spatial datasets in a particular form.
+This repository contains source data, data generation scripts and final data for the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s set of demonstration spatial datasets.
 
-These spatial datasets form part of the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s catalogue of data. See https://idnau.org for catalogue access.
+These datasets are accessed live, online, via the IDN's Demonstration Catalogue. See https://idnau.org for access.
 
-These datasets are public spatial datasets that come in various forms - Excel spreadsheets, File GeoDatabases etc. - and the scripts here convert them into spatial [Semantic Web] data compatible with https://www.ga.gov.au[Geoscience Australia's] https://geoscienceaustralia.github.io/fsdf-supermodel/supermodel.html[Digital Atlas of Australia (DAA)'s data model].
+== Data Folders
+
+Each dataset in this repository is stored in a folder within the top-level folder `datasets/`, for example the "Australian Government Indigenous Programs & Policy Locations" (AGIL) dataset" is stored in `datasets/agil/`.
+
+Each dataset folder has several folders and a file:
+
+* `data/` - final RDF data for this dataset.
+** this is all you need if you want to get this dataset's content
+* `scripts/` - Python and perhaps other scripts to produce the final data
+* `source/` - source data for the dataset, if we have it and are allowed to share it
+** could be Excel files, SHAPE files etc.
+
+The top-level folder `background-rdf/` contains ontologies that should be loaded with the spatial data to give labels to properties.
+
+=== data/
+
+These final data for these datasets conform to the with https://www.ga.gov.au[Geoscience Australia's] https://geoscienceaustralia.github.io/fsdf-supermodel/supermodel.html[Digital Atlas of Australia (DAA)'s data model]. This means these datasets can be used interchangeable with them and are known to display well in with the https://github.com/rdflib/prez/[Prez] Linked Data tool.
+
+=== scripts/
 
 The conversion scripts here are all quite similar. They use Python scripts which:
 
@@ -22,7 +40,7 @@ The conversion scripts here are all quite similar. They use Python scripts which
 
 Each dataset's source data, scripts, static metadata and results are stored per-dataset in folders within `datasets/` in this repository.
 
-== Usage Technical Details
+==== script usage
 This repository's scripts are https://www.python.org[Python scripts] that are compatible with https://www.python.org/downloads/release/python-3100/[Python 3.10] and use the https://python-poetry.org[Poetry] python package manager.
 
 To run these scripts, you will need to:
@@ -34,8 +52,6 @@ To run these scripts, you will need to:
 .. you can probably just run `~$ python {DATASET-ID}-etl.py` in the `scripts/` directory for aech dataset
 . check the `data/` folder in each dataset's folder
 .. for {DATASET-ID}.ttl - the resultant data file
-
-The folder `background-rdf/` contains ontologies that should be loaded with the spatial data to give labels to properties.
 
 == License & Rights
 
