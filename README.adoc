@@ -17,6 +17,7 @@ Each dataset folder has several folders and a file:
 
 * `data/` - final RDF data for this dataset.
 ** this is all you need if you want to get this dataset's content
+** multiple files where data exceeds 100MB
 * `scripts/` - Python and perhaps other scripts to produce the final data
 * `source/` - source data for the dataset, if we have it and are allowed to share it
 ** could be Excel files, SHAPE files etc.

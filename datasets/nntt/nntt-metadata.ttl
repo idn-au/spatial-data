@@ -1,4 +1,4 @@
-PREFIX ndt: <https://linked.data.gov.au/dataset/idnc/ndt/>
+PREFIX ndt: <https://w3id.org/idn/dataset/ndt/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -7,7 +7,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sand: <http://example.com/dataset/sandgate/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idnc/NNTT>
+<https://w3id.org/idn/dataset/NNTT>
     a dcat:Dataset ;
 dcterms:description """Len says Marcia may need to negotiate their agreement to interface this with loc-i.
 

@@ -1,0 +1,18 @@
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+SELECT ?f ?wkt
+WHERE {
+  GRAPH ?g {
+    ?f a geo:Feature ;
+  		geo:hasGeometry/geo:asWKT ?wkt
+    .
+
+    FILTER geof:sfWithin(?wkt, "POLYGON ((133 -23, 134 -23, 134 -24, 133 -24, 133 -23))"^^geo:wktLiteral)
+  }
+}
+
+# should get 57 results
+
+# FILTER geof:sfWithin(?wkt, "POLYGON ((133.75 -23.75, 134 -23.75, 134 -24, 133.75 -24, 133.75 -23.75))"^^geo:wktLiteral)
+
+# should get 4 results
