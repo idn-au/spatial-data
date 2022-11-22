@@ -1,4 +1,4 @@
-PREFIX ndt: <https://w3id.org/idn/dataset/ndt/>
+PREFIX nntt: <https://w3id.org/idn/dataset/NNTT/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -19,10 +19,10 @@ Query -- given NNTT provides a data model and comprehensive downloads under CC l
         a geo:Geometry ;
         geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
     ] ;
-    rdfs:member ndt:determinations ;
+    rdfs:member nntt:determinations ;
 .
 
-ndt:determinations
+nntt:determinations
     a geo:FeatureCollection ;
     dcterms:description "Native Title Determination Areas"@en ;
     dcterms:identifier "determinations"^^xsd:token ;
