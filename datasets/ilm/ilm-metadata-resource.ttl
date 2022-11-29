@@ -1,0 +1,51 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://w3id.org/idn/dataset/opcat>
+    dcterms:hasPart <https://w3id.org/idn/dataset/ILM> ;
+.
+
+<https://w3id.org/idn/dataset/ILM>
+    a dcat:Resource ;
+    dcterms:identifier "ILM"^^xsd:token ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/open> ;
+    dcterms:created "2022-11-30"^^xsd:date ;
+    dcterms:description """This Dataset is a set of spatial layers each representing indigenous language areas in Australia from different sources.
+
+Having no single source, this dataset is, at least for now, managed by the Indigenous Data Network.
+
+The intention of bringing multiple language area spatial layers into one dataset is to allow for correlation (visual and data) between the various layers, and to house them in one easily identifiable location for ease of access."""@en ;
+    dcterms:identifier "ILM"^^xsd:token ;
+    dcterms:issued "2022-11-30"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:modified "2022-11-30"^^xsd:date ;
+    dcterms:rights "(c) Indigenous Data Network, 2022" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:title "Indigenous Language Multimap Dataset"@en ;
+    dcterms:type dcat:Dataset ;
+    dcat:distribution [
+            dcat:accessURL "https://w3id.org/idn/dataset/ILM"^^xsd:anyURI
+        ] ;
+    dcat:theme <https://w3id.org/idn/def/idn-th/place> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:contributor ;
+            prov:agent <https://linked.data.gov.au/org/aiatsis>
+        ] ,
+        [
+            dcat:hadRole iso:creator ;
+            prov:agent <https://linked.data.gov.au/org/idn>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/idn>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/idn>
+        ] ;
+.
+

@@ -11,6 +11,7 @@ rdflib = "^6.2.0"
 pandas = "^1.4.4"
 pyshacl = "^0.20.0"
 openpyxl = "^3.0.10"
+shapely = "^1.8.5"
 
 [tool.poetry.dev-dependencies]
 
