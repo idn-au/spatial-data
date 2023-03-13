@@ -4,11 +4,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/opcat>
-    dcterms:hasPart <https://w3id.org/idn/dataset/ILM> ;
+<https://data.idnau.org/pid/spacecat/opcat>
+    dcterms:hasPart <https://data.idnau.org/pid/spacecat/ILM> ;
 .
 
-<https://w3id.org/idn/dataset/ILM>
+<https://data.idnau.org/pid/spacecat/ILM>
     a dcat:Resource ;
     dcterms:identifier "ILM"^^xsd:token ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/open> ;
@@ -27,9 +27,9 @@ The intention of bringing multiple language area spatial layers into one dataset
     dcterms:title "Indigenous Language Multimap Dataset"@en ;
     dcterms:type dcat:Dataset ;
     dcat:distribution [
-            dcat:accessURL "https://w3id.org/idn/dataset/ILM"^^xsd:anyURI
+            dcat:accessURL "https://data.idnau.org/pid/spacecat/ILM"^^xsd:anyURI
         ] ;
-    dcat:theme <https://w3id.org/idn/def/idn-th/place> ;
+    dcat:theme <https://data.idnau.org/pid/vocab/idn-th/place> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:contributor ;

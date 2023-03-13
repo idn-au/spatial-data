@@ -1,0 +1,28 @@
+PREFIX aac: <https://data.idnau.org/pid/spacecat/AAC/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ego: <https://data.idnau.org/pid/ego/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+aac:alice-springs
+    a geo:Feature ;
+    dcterms:type aac:AboriginalDistrict ;  # not defined yet
+    geo:hasGeometry [
+        a geo:Geometry ;
+        ego:asNarrative """NORTH- A straight line east and west through Burwell.
+
+SOUTH- A straight line east and west through Deep Well.
+
+EAST- The western boundary of the Arltunga Police District.
+
+WEST- A straight line North and South through the Hamilton Downs homestead.""" ;
+        time:hasTime [
+            # assuming no change: if there is change, we will need to create additional Geometries with other time ranges
+            # TODO: make temporal objects of NT1930, NT1941 etc with their corresponding year spans so we can use them, not years directly
+            time:hasBeginning [ time:inXSDgYear "1930"^^xsd:gYear ] ;
+            time:hasEnd [ time:inXSDgYear "1941"^^xsd:gYear ] ;
+        ] ;
+    ] ;
+    dcterms:source "https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/ViewImage.aspx?B=334826&S=95"^^xsd:anyURI ;
+    geo:sfWithin <https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/STE/items/7> ;  # Northern Territory
+.

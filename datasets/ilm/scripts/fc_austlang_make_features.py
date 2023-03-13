@@ -8,7 +8,7 @@ from utils import make_clean_id, bind_namespaces
 
 
 g = Graph()
-ILM = Namespace("https://w3id.org/idn/dataset/ILM/")
+ILM = Namespace("https://data.idnau.org/pid/spacecat/ILM/")
 feature_collection = ILM.austlang
 
 with open("../source/austlang_001.csv")as f:
@@ -19,7 +19,7 @@ with open("../source/austlang_001.csv")as f:
         lat = line[5].strip()
         if lon != "" and lat != "":
             id = line[0]
-            this_feature = URIRef("https://w3id.org/idn/dataset/ILM/feature/" + id)
+            this_feature = URIRef("https://data.idnau.org/pid/spacecat/ILM/feature/" + id)
             g.add((this_feature, RDF.type, GEO.Feature))
             g.add((this_feature, DCTERMS.identifier, Literal(id, datatype=XSD.token)))
             g.add((this_feature, RDFS.label, Literal(line[1].strip())))

@@ -1,18 +1,18 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX feat: <https://w3id.org/idn/dataset/ILM/feature/>
+PREFIX feat: <https://data.idnau.org/pid/spacecat/ILM/feature/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-PREFIX ilm: <https://w3id.org/idn/dataset/ILM/>
+PREFIX ilm: <https://data.idnau.org/pid/spacecat/ILM/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/opcat>
-    dcterms:hasPart <https://w3id.org/idn/dataset/ILM> ;
+<https://data.idnau.org/pid/spacecat/opcat>
+    dcterms:hasPart <https://data.idnau.org/pid/spacecat/ILM> ;
 .
 
-<https://w3id.org/idn/dataset/ILM>
+<https://data.idnau.org/pid/spacecat/ILM>
     a
         dcat:Dataset ,
         dcat:Resource ;
@@ -40,9 +40,9 @@ The intention of bringing multiple language area spatial layers into one dataset
         ilm:austlang ,
         ilm:tindale ;
     dcat:distribution [
-            dcat:accessURL "https://w3id.org/idn/dataset/ILM"^^xsd:anyURI
+            dcat:accessURL "https://data.idnau.org/pid/spacecat/ILM"^^xsd:anyURI
         ] ;
-    dcat:theme <https://w3id.org/idn/def/idn-th/place> ;
+    dcat:theme <https://data.idnau.org/pid/vocab/idn-th/place> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:contributor ;

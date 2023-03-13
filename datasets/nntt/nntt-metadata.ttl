@@ -1,4 +1,4 @@
-PREFIX nntt: <https://w3id.org/idn/dataset/NNTT/>
+PREFIX nntt: <https://data.idnau.org/pid/spacecat/NNTT/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -7,11 +7,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sand: <http://example.com/dataset/sandgate/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/NNTT>
-    a dcat:Dataset ;
-dcterms:description """Len says Marcia may need to negotiate their agreement to interface this with loc-i.
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart <https://data.idnau.org/pid/spacecat/NNTT> ;
+.
 
-Query -- given NNTT provides a data model and comprehensive downloads under CC license already, what needs to be negotiated? Perhaps some way of being notified of changes and updates would be beneficial. See their downloads page: http://www.nntt.gov.au/assistance/Geospatial/Pages/DataDownload.aspx and the Copyright page.""" ;
+<https://data.idnau.org/pid/spacecat/NNTT>
+    a dcat:Dataset ;
+    dcterms:description "National Native Title Tribunal dataset"@en ;
     dcterms:identifier "NNTT"^^xsd:token ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;  # Australia
     dcterms:title "Native Title Databases at the National Native Title Tribunal"@en ;
