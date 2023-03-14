@@ -1,10 +1,10 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX feat: <https://data.idnau.org/pid/spacecat/ILM/feature/>
+PREFIX feat: <https://data.idnau.org/pid/ILM/feature/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://data.idnau.org/pid/spacecat/ILM/austlang>
+<https://data.idnau.org/pid/ILM/austlang>
     rdfs:member
         feat:A1 ,
         feat:A101 ,

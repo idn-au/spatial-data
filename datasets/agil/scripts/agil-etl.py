@@ -11,7 +11,7 @@ if __name__ == "__main__":
     g.bind("dcterms", DCTERMS)
     g.bind("geo", GEO)
     g.bind("sdo", SDO)
-    dataset_iri = URIRef("https://data.idnau.org/pid/spacecat/agil")
+    dataset_iri = URIRef("https://data.idnau.org/pid/agil")
     dataset_namespace = Namespace(str(dataset_iri) + "/")
     feature_collection_iri = URIRef(str(dataset_namespace) + "point-locations")
 

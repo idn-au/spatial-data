@@ -1,4 +1,4 @@
-PREFIX aac: <https://data.idnau.org/pid/spacecat/AAC/>
+PREFIX aac: <https://data.idnau.org/pid/AAC/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ego: <https://data.idnau.org/pid/ego/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>

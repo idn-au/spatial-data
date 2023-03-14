@@ -1,4 +1,4 @@
-PREFIX aac: <https://data.idnau.org/pid/spacecat/AAC/>
+PREFIX aac: <https://data.idnau.org/pid/AAC/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -8,10 +8,10 @@ PREFIX sand: <http://example.com/dataset/sandgate/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/spacecat>
-    dcterms:hasPart <https://data.idnau.org/pid/spacecat/AAC> ;
+    dcterms:hasPart <https://data.idnau.org/pid/AAC> ;
 .
 
-<https://data.idnau.org/pid/spacecat/AAC>
+<https://data.idnau.org/pid/AAC>
     a dcat:Dataset ;
     dcterms:description """""" ;
     dcterms:identifier "AAC"^^xsd:token ;

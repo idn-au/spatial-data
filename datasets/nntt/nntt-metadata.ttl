@@ -1,4 +1,4 @@
-PREFIX nntt: <https://data.idnau.org/pid/spacecat/NNTT/>
+PREFIX nntt: <https://data.idnau.org/pid/NNTT/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -8,10 +8,10 @@ PREFIX sand: <http://example.com/dataset/sandgate/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/spacecat>
-    dcterms:hasPart <https://data.idnau.org/pid/spacecat/NNTT> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NNTT> ;
 .
 
-<https://data.idnau.org/pid/spacecat/NNTT>
+<https://data.idnau.org/pid/NNTT>
     a dcat:Dataset ;
     dcterms:description "National Native Title Tribunal dataset"@en ;
     dcterms:identifier "NNTT"^^xsd:token ;
