@@ -1,0 +1,73 @@
+@prefix :        <https://linked.data.gov.au/def/fsdf-backbone/validator/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo:     <http://www.opengis.net/ont/geosparql#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo:     <https://schema.org/> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+[ rdf:type     sh:ValidationReport ;
+  sh:conforms  false ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "dcat:Dataset instances SHOULD indicate provenance in one of three ways: if derived from an RDF dataset then with prov:wasDerivedFrom - with an IRI value, if derived from an online but non-RDF data source then with dcterms:source - xsd:anyURI` value and if neither then with a written statement with dcterms:provenance - string or langString value" ;
+                 sh:resultSeverity             sh:Warning ;
+                 sh:sourceConstraintComponent  sh:OrConstraintComponent ;
+                 sh:sourceShape                :DM4 ;
+                 sh:value                      <https://w3id.org/idn/dataset/nntt>
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "dcat:Dataset instances MUST indicate at least one geo:FeatureCollection instances within them with the rdfs:member property" ;
+                 sh:resultPath                 rdfs:member ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:ClassConstraintComponent ;
+                 sh:sourceShape                []  ;
+                 sh:value                      <https://w3id.org/idn/dataset/NNTT/determinations>
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "dcat:Dataset instances MUST indicate at least creator & publisher Agents, either directly, or via the prov:qualifiedAttribution dcat:hadRole sequence path" ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:XoneConstraintComponent ;
+                 sh:sourceShape                :DM3 ;
+                 sh:value                      <https://w3id.org/idn/dataset/nntt>
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "Each dcat:Dataset and geo:FeatureCollection instance MUST indicate one and only one sdo:description property that with a value of data type xsd:string or rdf:langString" ;
+                 sh:resultPath                 sdo:name ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                :mandatory-title
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "Each dcat:Dataset and geo:FeatureCollection instance MUST indicate one and only one sdo:description property that with a value of data type xsd:string or rdf:langString" ;
+                 sh:resultPath                 sdo:description ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                :mandatory-description
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "Each dcat:Dataset instance MUST indicate one and only one sdo:dateCreated property with a value of data type xsd:date, xsd:dateTime, or xsd:dateTimeStamp" ;
+                 sh:resultPath                 sdo:dateCreated ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                :mandatory-dateCreated
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  <https://w3id.org/idn/dataset/nntt> ;
+                 sh:resultMessage              "Each dcat:Dataset instance MUST indicate one and only one sdo:dateModified property with a value of data type xsd:date, xsd:dateTime, or xsd:dateTimeStamp" ;
+                 sh:resultPath                 sdo:dateModified ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                :mandatory-dateModified
+               ]
+] .

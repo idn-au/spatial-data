@@ -5,6 +5,7 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geofab: <https://linked.data.gov.au/def/geofabric#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sand: <http://example.com/dataset/sandgate/>
+PREFIX sdo: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/spacecat>
@@ -13,9 +14,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/AAC>
     a dcat:Dataset ;
-    dcterms:description """""" ;
+    sdo:description """""" ;
     dcterms:identifier "AAC"^^xsd:token ;
-    dcterms:title "Annual Aboriginal Census, 1921-1944 - Australia Spatial Objects" ;
+    sdo:name "Annual Aboriginal Census, 1921-1944 - Australia Spatial Objects" ;
     geo:hasBoundingBox [
         a geo:Geometry ;
         geo:asGeoJSON "{\"type\": \"Polygon\", \"coordinates\": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}"^^geo:geoJSONLiteral
@@ -26,9 +27,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 aac:
     a geo:FeatureCollection ;
-    dcterms:description ""@en ;
+    sdo:description ""@en ;
     dcterms:identifier ""^^xsd:token ;
-    dcterms:title ""@en ;
+    sdo:name ""@en ;
     geo:hasBoundingBox [
         a geo:Geometry ;
         geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
