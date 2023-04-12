@@ -2,11 +2,13 @@ PREFIX aac: <https://data.idnau.org/pid/AAC/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ego: <https://data.idnau.org/pid/ego/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX sdo: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 aac:alice-springs
     a geo:Feature ;
-    dcterms:type aac:AboriginalDistrict ;  # not defined yet
+    sdo:additionalType aac:AboriginalDistrict ;  # not defined yet
     geo:hasGeometry [
         a geo:Geometry ;
         ego:asNarrative """NORTH- A straight line east and west through Burwell.

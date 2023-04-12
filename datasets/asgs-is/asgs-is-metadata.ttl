@@ -5,6 +5,7 @@ PREFIX idnth: <https://data.idnau.org/pid/vocab/idn-th/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/spacecat>
@@ -13,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/ASGS-IS>
     a dcat:Dataset ;
-    dcterms:created "2021-10-06"^^xsd:date ;
-    dcterms:description """The Indigenous Structure is a geographical standard for the publication and analysis of statistics about the Aboriginal and/or Torres Strait Islander peoples of Australia.
+    sdo:dateCreated "2021-10-06"^^xsd:date ;
+    sdo:description """The Indigenous Structure is a geographical standard for the publication and analysis of statistics about the Aboriginal and/or Torres Strait Islander peoples of Australia.
 
 This dataset is a subset of the total ASGS dataset (https://linked.data.gov.au/dataset/asgsed3).
 
@@ -32,14 +33,14 @@ The boundaries in the Indigenous Structure are built from whole SA1s. SA1s are d
     dcterms:identifier "ASGS-IS"^^xsd:token ;
     dcterms:issued "2021-10-06"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2021-10-06"^^xsd:date ;
+    sdo:dateModified "2021-10-06"^^xsd:date ;
     dcterms:rights "Copyright © Commonwealth of Australia (Australian Bureau of Statistics) 2021" ;
     dcterms:source "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure"^^xsd:token ;
     dcterms:temporal [
             prov:endedAtTime "2026"^^xsd:gYear ;
             prov:startedAtTime "2021"^^xsd:gYear
         ] ;
-    dcterms:title "Indigenous Structures within the ASGS Ed. 3"@en ;
+    sdo:name "Indigenous Structures within the ASGS Ed. 3"@en ;
     geo:hasBoundingBox [
             a geo:Geometry ;
             geo:asGeoJSON "{\"type\": \"Polygon\", \"coordinates\": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}"^^geo:geoJSONLiteral
@@ -93,12 +94,12 @@ idnth:place
 <https://linked.data.gov.au/dataset/asgsed3/ILOC>
     a geo:FeatureCollection ;
     dcterms:identifier "ILOC"^^xsd:token ;
-    dcterms:title "Indigenous Locations within the ASGS Ed. 3"@en ;
+    sdo:name "Indigenous Locations within the ASGS Ed. 3"@en ;
     geo:hasBoundingBox [
         a geo:Geometry ;
         geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
     ] ;
-    dcterms:description """Indigenous Locations (ILOCs) are geographic areas built from whole Statistical Areas Level 1 (SA1s). Indigenous Locations are designed to represent small Aboriginal and Torres Strait Islander communities (urban and rural) that are near each other or that share language, traditional borders or Native Title. They usually have a minimum population of about 90 people. In some cases, Indigenous Locations have a smaller Aboriginal and Torres Strait Islander population to meet statistical requirements or to better represent the local community. Whole Indigenous Locations aggregate to form Indigenous Areas.
+    sdo:description """Indigenous Locations (ILOCs) are geographic areas built from whole Statistical Areas Level 1 (SA1s). Indigenous Locations are designed to represent small Aboriginal and Torres Strait Islander communities (urban and rural) that are near each other or that share language, traditional borders or Native Title. They usually have a minimum population of about 90 people. In some cases, Indigenous Locations have a smaller Aboriginal and Torres Strait Islander population to meet statistical requirements or to better represent the local community. Whole Indigenous Locations aggregate to form Indigenous Areas.
 
 There are 1,139 Indigenous Locations covering the whole of Australia without gaps or overlaps. This incorporates 19 non-spatial special purpose codes including a new Outside Australia code; more information on these can be found in the special purpose codes section.
 
@@ -108,12 +109,12 @@ The Other Territories of Cocos (Keeling) Islands, Christmas Island and Norfolk I
 <https://linked.data.gov.au/dataset/asgsed3/IARE>
     a geo:FeatureCollection ;
     dcterms:identifier "IARE"^^xsd:token ;
-    dcterms:title "Indigenous Areas within the ASGS Ed. 3"@en ;
+    sdo:name "Indigenous Areas within the ASGS Ed. 3"@en ;
     geo:hasBoundingBox [
         a geo:Geometry ;
         geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
     ] ;
-    dcterms:description """Indigenous Areas (IAREs) are medium sized geographic areas built from whole Indigenous Locations. They are designed for the release and analysis of more detailed statistics for Aboriginal and Torres Strait Islander people. Whole Indigenous Areas aggregate to form Indigenous Regions.
+    sdo:description """Indigenous Areas (IAREs) are medium sized geographic areas built from whole Indigenous Locations. They are designed for the release and analysis of more detailed statistics for Aboriginal and Torres Strait Islander people. Whole Indigenous Areas aggregate to form Indigenous Regions.
 
 There are 431 Indigenous Areas covering the whole of Australia without gaps or overlaps. This incorporates 19 non-spatial special purpose codes including a new Outside Australia code; more information on these can found in the special purpose codes section.
 
@@ -123,12 +124,12 @@ The Other Territories of Jervis Bay, Cocos (Keeling) Islands, Christmas Island a
 <https://linked.data.gov.au/dataset/asgsed3/IREG>
     a geo:FeatureCollection ;
     dcterms:identifier "IREG"^^xsd:token ;
-    dcterms:title "Indigenous Regions within the ASGS Ed. 3"@en ;
+    sdo:name "Indigenous Regions within the ASGS Ed. 3"@en ;
     geo:hasBoundingBox [
         a geo:Geometry ;
         geo:asGeoJSON '{"type": "Polygon", "coordinates": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}'^^geo:geoJSONLiteral ;
     ] ;
-    dcterms:description """Indigenous Regions (IREGs) are large geographic areas built from whole Indigenous Areas and are based on historical boundaries. The larger population of Indigenous Regions enables highly detailed analysis.
+    sdo:description """Indigenous Regions (IREGs) are large geographic areas built from whole Indigenous Areas and are based on historical boundaries. The larger population of Indigenous Regions enables highly detailed analysis.
 
 There are 59 Indigenous Regions covering the whole of Australia without gaps or overlaps. This incorporates 19 non-spatial special purpose codes; more information on these can be found in the special purpose codes section.
 
