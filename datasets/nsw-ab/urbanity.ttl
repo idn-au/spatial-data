@@ -1,0 +1,47 @@
+PREFIX : <https://data.idnau.org/pid/vocab/urbanity/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/aarr>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:R
+    a skos:Concept ;
+    dcterms:provenance "Developed by the Indigenous Data Network, 2023, from NSW Spatial Services coded data"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rural"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Rural"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:U
+    a skos:Concept ;
+    dcterms:provenance "Developed by the Indigenous Data Network, 2023, from NSW Spatial Services coded data"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Urban"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Urban"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-04-17"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/idn> ;
+    dcterms:issued "2023-04-17"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:modified "2023-04-17"^^xsd:date ;
+    dcterms:provenance "This vocabulary was established in 2023 to support the NSW Administrative Boundaries spatial dataset, as reproduced by the Indigenous Data Network"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/idn> ;
+    dcterms:rights "(c) Indigenous Data Network, 2023" ;
+    owl:versionIRI :0.0.1 ;
+    owl:versionInfo "0.0.1" ;
+    skos:definition "Indicates whether something such as a local council area is Rural (R) or Urban (U)."@en ;
+    skos:hasTopConcept
+        :R ,
+        :U ;
+    skos:prefLabel "Agent to Agent Relationship Roles"@en ;
+.
+
