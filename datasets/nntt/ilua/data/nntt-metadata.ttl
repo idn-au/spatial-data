@@ -1,0 +1,59 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart <https://data.idnau.org/pid/nntt> ;
+.
+
+<https://data.idnau.org/pid/nntt>
+    a dcat:Dataset ;
+    dcterms:title "National Native Title Tribunal Databases"@en ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "National Native Title Tribunal, (c) Commonwealth of Australia" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((100.0 -46.0, 168.0 -46.0, 168.0 -9.0, 100.0 -9.0, 100.0 -46.0))"^^geo:wktLiteral
+    ] ;
+    dcterms:description """The following native title information is available as spatial data:
+
+* Boundaries of native title claimant applications as per the Register of Native Title Claims.
+* The Schedule of Applications (Federal Court).
+* Determinations of native title.
+* Indigenous land use agreements (on the ILUA Register or in notification).
+* Representative Aboriginal and Torres Strait Islander Body (RATSIB) areas.
+* Native title determined outcomes.
+* Historical native title determination applications and NTDA transaction records.
+* Registered Native Title Bodies Corporate (RNTBCs)
+* Future Act Notices, Objections, and Determination Applications."""@en ;
+    dcat:accessRights """Products using this data should acknowledge the National Native Title Tribunal as the data source.
+
+DISCLAIMER
+
+While the National Native Title Tribunal (NNTT) and the Native Title Registrar (Registrar) have exercised due care in ensuring the accuracy of the information provided, it is provided for general information only and on the understanding that neither the NNTT, the Registrar nor the Commonwealth of Australia is providing professional advice. Appropriate professional advice relevant to your circumstances should be sought rather than relying on the information provided. In addition, you must exercise your own judgment and carefully evaluate the information provided for accuracy, currency, completeness and relevance for the purpose for which it is to be used.
+
+The information provided is often supplied by, or based on, data and information from external sources, therefore the NNTT and Registrar cannot guarantee that the information is accurate or up-to-date.
+
+The NNTT and Registrar expressly disclaim any liability arising from the use of this information.
+
+This information should not be relied upon in relation to any matters associated with cultural heritage.""" ;
+    dcat:contactPoint [
+        a vcard:Group ;
+        vcard:fn "Geospatial Services, National Native Title Tribunal" ;
+        vcard:hasAddress [
+            a vcard:Postal ;
+            vcard:country-name "Australia" ;
+            vcard:locality "Perth" ;
+            vcard:postal-code "6831" ;
+            vcard:street-address "PO Box 2528, St Georges Terrace Post Shop"
+        ] ;
+        vcard:hasEmail <mailto:geoservices@nntt.gov.au> ;
+        vcard:hasTelephone [
+            a vcard:Voice ;
+            vcard:hasValue <tel:+61733075000>
+        ]
+    ] ;
+.
