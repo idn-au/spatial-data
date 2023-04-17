@@ -6,6 +6,7 @@ PREFIX ilm: <https://data.idnau.org/pid/ILM/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/opcat>
@@ -17,8 +18,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         dcat:Dataset ,
         dcat:Resource ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/open> ;
-    dcterms:created "2022-11-30"^^xsd:date ;
-    dcterms:description """This Dataset is a set of spatial layers each representing indigenous language areas in Australia from different sources.
+    sdo:dateCreated "2022-11-30"^^xsd:date ;
+    sdo:description """This Dataset is a set of spatial layers each representing indigenous language areas in Australia from different sources.
 
 Having no single source, this dataset is, at least for now, managed by the Indigenous Data Network.
 
@@ -26,11 +27,11 @@ The intention of bringing multiple language area spatial layers into one dataset
     dcterms:identifier "ILM"^^xsd:token ;
     dcterms:issued "2022-11-30"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:modified "2022-11-30"^^xsd:date ;
+    sdo:dateModified "2022-11-30"^^xsd:date ;
     dcterms:rights "(c) Indigenous Data Network, 2022" ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
-    dcterms:title "Indigenous Language Multimap Dataset"@en ;
-    dcterms:type dcat:Dataset ;
+    sdo:name "Indigenous Language Multimap Dataset"@en ;
+    sdo:additionalType dcat:Dataset ;
     geo:hasBoundingBox [
             a geo:Geometry ;
             geo:asGeoJSON "{\"type\": \"Polygon\", \"coordinates\": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}"^^geo:geoJSONLiteral ;
@@ -49,7 +50,11 @@ The intention of bringing multiple language area spatial layers into one dataset
             prov:agent <https://linked.data.gov.au/org/aiatsis>
         ] ,
         [
-            dcat:hadRole iso:creator ;
+            dcat:hadRole sdo:creator ;
+            prov:agent <https://linked.data.gov.au/org/idn>
+        ] ,
+        [
+            dcat:hadRole sdo:publisher ;
             prov:agent <https://linked.data.gov.au/org/idn>
         ] ,
         [
@@ -64,11 +69,11 @@ The intention of bringing multiple language area spatial layers into one dataset
 
 ilm:austlang
     a geo:FeatureCollection ;
-    dcterms:description "Spatial point locations for 841 of the 1208 AustLang languages"@en ;
+    sdo:description "Spatial point locations for 841 of the 1208 AustLang languages"@en ;
     dcterms:identifier "austlang"^^xsd:token ;
     dcterms:provenance "All of the data used in this FeatureCollection was sources from the AIATSIS AusLang database online at https://collection.aiatsis.gov.au/austlang. This FeatureCollection presents that AusLang DB information in Knowledge Graph manner compatible with systems such as the Location Index and Digital Atlas of Australia Data Platform." ;
     dcterms:source "https://collection.aiatsis.gov.au/austlang"^^xsd:anyURI ;
-    dcterms:title "AustLang point locations"@en ;
+    sdo:name "AustLang point locations"@en ;
     geo:hasBoundingBox [
             a geo:Geometry ;
             geo:asGeoJSON "{\"type\": \"Polygon\", \"coordinates\": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}"^^geo:geoJSONLiteral ;
@@ -17242,10 +17247,10 @@ Blood: gurrk""" ;
 
 ilm:tindale
     a geo:FeatureCollection ;
-    dcterms:description "A digital version of the well-known Tindale map of Australian indigenous language areas"@en ;
+    sdo:description "A digital version of the well-known Tindale map of Australian indigenous language areas"@en ;
     dcterms:identifier "tindale"^^xsd:token ;
     dcterms:provenance "This version of the Tindale map was digitised from a paper source" ;
-    dcterms:title "Tindale Map"@en ;
+    sdo:name "Tindale Map"@en ;
     geo:hasBoundingBox [
             a geo:Geometry ;
             geo:asGeoJSON "{\"type\": \"Polygon\", \"coordinates\": [[[96.0, -45.0], [168.0, -45.0], [168.0, -9.0], [96.0, -9.0], [96.0, -45.0]]]}"^^geo:geoJSONLiteral ;
