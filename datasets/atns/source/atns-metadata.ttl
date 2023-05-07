@@ -1,0 +1,44 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofab: <https://linked.data.gov.au/def/geofabric#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart <https://data.idnau.org/pid/NSW-LALC> ;
+.
+
+<https://data.idnau.org/pid/atns>
+    a dcat:Dataset ;
+    sdo:description "Spatial features of the Agreements, Treaties and Negotiated Settlements (ATNS) database" ;
+    sdo:name "ATNS Spatial Features" ;
+    dcat:keyword
+        "Agreements" ,
+        "Treaties" ,
+        "Negotiated Settlements" ,
+        "ATNS" ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        # The ABS' extent of Australia
+        geo:asWKT "POLYGON ((96 -45, 96 -9, 168 -9, 168 -45, 96 -45))"^^geo:wktLiteral ;
+    ] ;
+    rdfs:member <https://data.idnau.org/pid/atns/entity-areas> ;
+    dcterms:provenance "This dataset is a direct extraction of the spatial elements of the ATNS with no additional information added other than spatial relations to other published Linked Data objects, such as States & Territories in the ASGS" ;
+    dcterms:source "https://www.atns.net.au"^^xsd:anyURI ;
+    sdo:creator <https://linked.data.gov.au/org/idn> ;
+    sdo:publisher <https://linked.data.gov.au/org/idn> ;
+    sdo:dateCreated "2023-05-08"^^xsd:date ;
+    sdo:dateModified "2023-05-08"^^xsd:date ;
+.
+
+<https://data.idnau.org/pid/atns/entity-areas>
+    a geo:FeatureCollection ;
+    sdo:description "Bounding Box areas for all of the Entities - Agreements, Treaties etc., in the ATNS database"@en ;
+    sdo:name "ATNS Entity Areas"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((140.999265 -37.5050183, 153.6388317 -37.5050183, 153.6388317 -28.1570205, 140.999265 -28.1570205, 140.999265 -37.5050183))"^^geo:wktLiteral ;
+    ] ;
+.

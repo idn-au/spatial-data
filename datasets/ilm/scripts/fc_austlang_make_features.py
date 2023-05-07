@@ -1,14 +1,15 @@
 import csv
-from shapely.geometry import shape
-from rdflib import URIRef, Literal, Namespace, BNode, Graph
-from rdflib.namespace import DCTERMS, GEO, RDF, RDFS, XSD
 import sys
+
+from rdflib import URIRef, Literal, Namespace, BNode, Graph
+from rdflib.namespace import GEO, RDF, RDFS
+
 sys.path.append("../../")
-from utils import make_clean_id, bind_namespaces
+from utils import bind_namespaces
 
 
 g = Graph()
-ILM = Namespace("https://data.idnau.org/pid/ILM/")
+ILM = Namespace("https://data.idnau.org/pid/ilm/")
 feature_collection = ILM.austlang
 
 with open("../source/austlang_001.csv")as f:
@@ -19,9 +20,8 @@ with open("../source/austlang_001.csv")as f:
         lat = line[5].strip()
         if lon != "" and lat != "":
             id = line[0]
-            this_feature = URIRef("https://data.idnau.org/pid/ILM/feature/" + id)
+            this_feature = URIRef("https://data.idnau.org/pid/ilm/feature/" + id)
             g.add((this_feature, RDF.type, GEO.Feature))
-            g.add((this_feature, DCTERMS.identifier, Literal(id, datatype=XSD.token)))
             g.add((this_feature, RDFS.label, Literal(line[1].strip())))
             geom = BNode()
             g.add((this_feature, GEO.hasGeometry, geom))
@@ -34,4 +34,3 @@ with open("../source/austlang_001.csv")as f:
 
 bind_namespaces(g)
 g.serialize(destination="../source/fc-austlang.ttl", format="longturtle")
-

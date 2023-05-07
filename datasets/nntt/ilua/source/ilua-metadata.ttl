@@ -1,0 +1,63 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX nntt: <https://data.idnau.org/pid/nntt/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/nntt>
+    rdfs:member nntt:ilua ;
+.
+
+nntt:ilua
+    a geo:FeatureCollection ;
+    dcterms:created "1994"^^xsd:gYear ;
+    dcterms:identifier "determinations"^^xsd:token ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:modified "2020-10-09"^^xsd:date ;
+    dcterms:rights "National Native Title Tribunal, (c) Commonwealth of Australia" ;
+    sdo:description "An indigenous land use agreement (ILUA) is a voluntary, legally binding agreement about the use and management of land or waters, made between one or more native title groups and non-native title interest holders in the ILUA area (such as grantee parties, pastoralists or governments). The Register of Indigenous Land Use Agreements is kept by the Native Title Registrar in accordance with s 199A of the NTA and includes a description of the ILUA area, the parties' names, the term of the ILUA and other information as the Registrar considers is appropriate (s 199B of the NTA). Registration confers a contractual effect on the ILUA and binds all persons holding native title regardless as to whether they are already parties to the ILUA (s 24EA of the NTA). Note: This dataset contains records of ILUAs that have been publicly notified and/or registered."@en ;
+    sdo:name "Registered and Notified Indigenous Land Use Agreements"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((100.0 -46.0, 168.0 -46.0, 168.0 -9.0, 100.0 -9.0, 100.0 -46.0))"^^geo:wktLiteral
+    ] ;
+    dcat:accessRights """Products using this data should acknowledge the National Native Title Tribunal as the data source.
+
+DISCLAIMER
+
+While the National Native Title Tribunal (NNTT) and the Native Title Registrar (Registrar) have exercised due care in ensuring the accuracy of the information provided, it is provided for general information only and on the understanding that neither the NNTT, the Registrar nor the Commonwealth of Australia is providing professional advice. Appropriate professional advice relevant to your circumstances should be sought rather than relying on the information provided. In addition, you must exercise your own judgment and carefully evaluate the information provided for accuracy, currency, completeness and relevance for the purpose for which it is to be used.
+
+The information provided is often supplied by, or based on, data and information from external sources, therefore the NNTT and Registrar cannot guarantee that the information is accurate or up-to-date.
+
+The NNTT and Registrar expressly disclaim any liability arising from the use of this information.
+
+This information should not be relied upon in relation to any matters associated with cultural heritage.""" ;
+    dcat:contactPoint [
+        a vcard:Group ;
+        vcard:fn "Geospatial Services, National Native Title Tribunal" ;
+        vcard:hasAddress [
+            a vcard:Postal ;
+            vcard:country-name "Australia" ;
+            vcard:locality "Perth" ;
+            vcard:postal-code "6831" ;
+            vcard:street-address "PO Box 2528, St Georges Terrace Post Shop"
+        ] ;
+        vcard:hasEmail <mailto:geoservices@nntt.gov.au> ;
+        vcard:hasTelephone [
+            a vcard:Voice ;
+            vcard:hasValue <tel:+61733075000>
+        ]
+    ] ;
+    dcat:keyword
+        "Aboriginal" ,
+        "Australia" ,
+        "Cadastre" ,
+        "Native Title" ,
+        "boundaries" ,
+        "planning" ,
+        "society" ;
+    dcterms:source "https://nntt.maps.arcgis.com/home/item.html?id=2698667a86e54550b732174a71c3bc57&sublayer=6"^^xsd:anyURI ;
+.

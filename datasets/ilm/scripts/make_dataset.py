@@ -1,15 +1,14 @@
-from rdflib import Graph
+from rdflib import Dataset, Graph
 
-g = Graph()
+g = Graph(identifier="https://data.idnau.org/pid/ilm")
 # add each Feature Collection
-g.parse("../source/fc-tindale.ttl")
+# g.parse("../source/fc-tindale.ttl")
 g.parse("../source/fc-austlang.ttl")
 
 # add Dataset metadata
-g.parse("../ilm-metadata-dataset.ttl")
-
-# add Resource metadata
-g.parse("../ilm-metadata-resource.ttl")
+g.parse("../source/ilm-metadata.ttl")
 
 # write
-g.serialize(destination="../data/ilm.ttl", format="longturtle")
+d = Dataset()
+d.add_graph(g)
+d.serialize(destination="../ilm.nq", format="nquads")

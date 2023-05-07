@@ -1,0 +1,142 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX idnth: <https://data.idnau.org/pid/vocab/idn-th/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart <https://data.idnau.org/pid/asgs-is> ;
+.
+
+<https://data.idnau.org/pid/asgs-is>
+    a dcat:Dataset ;
+    sdo:dateCreated "2021-10-06"^^xsd:date ;
+    dcterms:description """The Indigenous Structure is a geographical standard for the publication and analysis of statistics about the Aboriginal and/or Torres Strait Islander peoples of Australia.
+
+This dataset is a subset of the total ASGS dataset (https://linked.data.gov.au/dataset/asgsed3).
+
+The ABS is committed to improving the quality and comprehensiveness of data available about the Aboriginal and Torres Strait Islander population. This update to the Aboriginal and Torres Strait Islander specific geography enhances the interpretability of information about Aboriginal and Torres Strait Islander peoples, particularly at lower levels of the geography structure.
+
+The structure has 3 hierarchical levels listed below from smallest to largest:
+
+* Indigenous Locations (ILOCs) represent small Aboriginal and Torres Strait Islander communities (urban and rural) with a minimum population of about 90 people.
+* Indigenous Areas (IAREs) are medium sized geographical areas designed to facilitate the release of more detailed statistics for Aboriginal and Torres Strait Islander people.
+* Indigenous Regions (IREGs) are large geographical areas based on historical boundaries. The larger population of Indigenous Regions enables highly detailed analysis.
+
+Statistical Areas Level 1 (SA1s) aggregate to Indigenous Locations which aggregate to Indigenous Areas, and they in turn aggregate to Indigenous Regions. At each hierarchical level, all of Geographic Australia is covered without gaps or overlaps.
+
+The boundaries in the Indigenous Structure are built from whole SA1s. SA1s are designed with reference to language groups, information from people with local knowledge of certain communities, and transport networks to identify both remote and non-remote discrete communities and urban areas with a high usual resident Aboriginal and Torres Strait Islander population. In some cases, Aboriginal and Torres Strait Islander communities that are too small to be identified separately have been combined with other nearby and associated communities."""@en ;
+    dcterms:issued "2021-10-06"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    sdo:dateModified "2021-10-06"^^xsd:date ;
+    dcterms:rights "Copyright © Commonwealth of Australia (Australian Bureau of Statistics) 2021" ;
+    dcterms:source "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure"^^xsd:token ;
+    dcterms:temporal [
+            prov:endedAtTime "2026"^^xsd:gYear ;
+            prov:startedAtTime "2021"^^xsd:gYear
+        ] ;
+    dcterms:title "Indigenous Structures within the ASGS Ed. 3"@en ;
+    geo:hasBoundingBox [
+            a geo:Geometry ;
+            geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+        ] ;
+    dcat:theme
+        idnth:indigenous-demographics ,
+        idnth:place ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ] ,
+        [
+            dcat:hadRole <https://data.idnau.org/pid/vocab/idn-role-codes/subjectAgentRepresentatitve> ;
+            prov:agent <https://w3id.org/idn/agent/abs-coatsis>
+        ] ;
+    rdfs:member
+        <https://linked.data.gov.au/dataset/asgsed3/ILOC> ,
+        <https://linked.data.gov.au/dataset/asgsed3/IARE> ,
+        <https://linked.data.gov.au/dataset/asgsed3/IREG> ;
+.
+
+iso:custodian
+    rdfs:label "Custodian"@en ;
+.
+
+iso:rightsHolder
+    rdfs:label "Rights Holder"@en ;
+.
+
+idnth:indigenous-demographics
+    rdfs:label "Indigenous Demographics"@en ;
+.
+
+idnth:place
+    rdfs:label "Place"@en ;
+.
+
+<https://w3id.org/idn/agent/abs-coatsis>
+    rdfs:label "CoATSIS"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things>
+    rdfs:label "About Indigenous Things"@en ;
+.
+
+<https://linked.data.gov.au/dataset/asgsed3/ILOC>
+    a geo:FeatureCollection ;
+    dcterms:title "Indigenous Locations within the ASGS Ed. 3"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+    ] ;
+    dcterms:description """Indigenous Locations (ILOCs) are geographic areas built from whole Statistical Areas Level 1 (SA1s). Indigenous Locations are designed to represent small Aboriginal and Torres Strait Islander communities (urban and rural) that are near each other or that share language, traditional borders or Native Title. They usually have a minimum population of about 90 people. In some cases, Indigenous Locations have a smaller Aboriginal and Torres Strait Islander population to meet statistical requirements or to better represent the local community. Whole Indigenous Locations aggregate to form Indigenous Areas.
+
+There are 1,139 Indigenous Locations covering the whole of Australia without gaps or overlaps. This incorporates 19 non-spatial special purpose codes including a new Outside Australia code; more information on these can be found in the special purpose codes section.
+
+The Other Territories of Cocos (Keeling) Islands, Christmas Island and Norfolk Island are each represented by individual Indigenous Locations. Jervis Bay is represented by two Indigenous Locations covering Jervis Bay (exc. Wreck Bay) and Wreck Bay separately."""@en ;
+.
+
+<https://linked.data.gov.au/dataset/asgsed3/IARE>
+    a geo:FeatureCollection ;
+    dcterms:title "Indigenous Areas within the ASGS Ed. 3"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+    ] ;
+    dcterms:description """Indigenous Areas (IAREs) are medium sized geographic areas built from whole Indigenous Locations. They are designed for the release and analysis of more detailed statistics for Aboriginal and Torres Strait Islander people. Whole Indigenous Areas aggregate to form Indigenous Regions.
+
+There are 431 Indigenous Areas covering the whole of Australia without gaps or overlaps. This incorporates 19 non-spatial special purpose codes including a new Outside Australia code; more information on these can found in the special purpose codes section.
+
+The Other Territories of Jervis Bay, Cocos (Keeling) Islands, Christmas Island and Norfolk Island are each represented by individual Indigenous Areas."""@en ;
+.
+
+<https://linked.data.gov.au/dataset/asgsed3/IREG>
+    a geo:FeatureCollection ;
+    dcterms:title "Indigenous Regions within the ASGS Ed. 3"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+    ] ;
+    dcterms:description """Indigenous Regions (IREGs) are large geographic areas built from whole Indigenous Areas and are based on historical boundaries. The larger population of Indigenous Regions enables highly detailed analysis.
+
+There are 59 Indigenous Regions covering the whole of Australia without gaps or overlaps. This incorporates 19 non-spatial special purpose codes; more information on these can be found in the special purpose codes section.
+
+The Other Territories of Jervis Bay and Norfolk Island are each represented by individual Indigenous Regions. Cocos (Keeling) Islands and Christmas Island are combined into one Indigenous Region."""@en ;
+.
+
+
+<https://linked.data.gov.au/org/abs>
+    rdfs:label "Australian Bureau of Statistics" ;
+.
+
+<https://data.idnau.org/pid/vocab/idn-role-codes/subjectAgentRepresentatitve>
+    rdfs:label "Subject Agent Representative" ;
+.

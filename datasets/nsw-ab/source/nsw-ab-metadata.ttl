@@ -1,0 +1,42 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geofab: <https://linked.data.gov.au/def/geofabric#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart <https://data.idnau.org/pid/NSW-LALC> ;
+.
+
+<https://data.idnau.org/pid/nsw-ab>
+    a dcat:Dataset ;
+    sdo:description "Multiple NSW Administrative Boundaries published by NSW Spatial Services and listed at data.gov.au" ;
+    sdo:name "NSW Administrative Boundaries" ;
+    dcat:keyword
+        "Aboriginal Boundaries" ,
+        "Aboriginal Land Council Boundaries" ,
+        "Administrative Boundaries" ,
+        "Local Aboriginal Land Council" ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((140.999265 -37.5050183, 153.6388317 -37.5050183, 153.6388317 -28.1570205, 140.999265 -28.1570205, 140.999265 -37.5050183))"^^geo:wktLiteral ;
+    ] ;
+    rdfs:member <https://data.idnau.org/pid/nsw-ab/lalc> ;
+    dcterms:source "https://data.gov.au/dataset/ds-nsw-6f95f6bc-9bb1-40a6-9cb5-c9bca375ac3a/details?q=Land%20council"^^xsd:anyURI ;
+    sdo:creator <https://linked.data.gov.au/org/idn> ;
+    sdo:publisher <https://linked.data.gov.au/org/idn> ;
+    sdo:dateCreated "2023-04-18"^^xsd:date ;
+    sdo:dateModified "2023-04-18"^^xsd:date ;
+.
+
+<https://data.idnau.org/pid/nsw-ab/lalc>
+    a geo:FeatureCollection ;
+    sdo:description "NSW Local Aboriginal Land Councils"@en ;
+    sdo:name "NSW Local Aboriginal Land Councils"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((140.999265 -37.5050183, 153.6388317 -37.5050183, 153.6388317 -28.1570205, 140.999265 -28.1570205, 140.999265 -37.5050183))"^^geo:wktLiteral ;
+    ] ;
+.
