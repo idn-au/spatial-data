@@ -1,0 +1,79 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX capad2020: <https://data.idnau.org/pid/capad2020/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart <https://data.idnau.org/pid/capad2020> ;
+.
+
+<https://data.idnau.org/pid/capad2020>
+    a dcat:Dataset ;
+    sdo:name "Collaborative Australian Protected Areas Database (CAPAD) 2020";
+    sdo:description "The Collaborative Australian Protected Areas Database (CAPAD) 2020 provides both spatial and textual information about government, Indigenous and privately protected areas for Australia, in both the marine and terrestrial environments." ;
+    geo:hasBoundingBox [
+            a geo:Geometry ;
+            geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral ;
+        ] ;
+    rdfs:member
+        capad2020:ipa ,
+        capad2020:npa ;
+    sdo:creator <https://linked.data.gov.au/org/idn> ;
+    sdo:publisher <https://linked.data.gov.au/org/idn> ;
+    sdo:dateCreated "2023-05-15"^^xsd:date ;
+    sdo:dateModified "2023-05-15"^^xsd:date ;
+    dcterms:provenance "This dataset was assembled from CAPAD data downloaded from DCCEEWW via data.gov.au" ;
+    dcterms:srouce "https://data.gov.au/dataset/ds-environment-9984a9fd-3dd0-4e38-bfbd-7e788fa851a1/details?q=capad%202020"^^xsd:anyURI ;
+.
+
+
+capad2020:ipa
+    a geo:FeatureCollection ;
+    sdo:description "Indigenous Protected Area features from the CAPAD2020 Dataset"@en ;
+    sdo:name "Indigenous Protected Areas"@en ;
+    geo:hasBoundingBox [
+            a geo:Geometry ;
+            geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+        ] ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:contributor ;
+            prov:agent <https://linked.data.gov.au/org/idn>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/dcceew>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/dcceew>
+        ] ;
+.
+
+capad2020:npa
+    a geo:FeatureCollection ;
+    sdo:description "National Park Aboriginal features from the CAPAD2020 Dataset"@en ;
+    sdo:name "National Park Aboriginal Areas"@en ;
+    geo:hasBoundingBox [
+            a geo:Geometry ;
+            geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+        ] ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:contributor ;
+            prov:agent <https://linked.data.gov.au/org/idn>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/dcceew>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/dcceew>
+        ] ;
+.

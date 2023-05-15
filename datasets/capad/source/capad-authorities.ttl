@@ -1,0 +1,277 @@
+PREFIX sdo: <https://schema.org/>
+
+<https://linked.data.gov.au/org/capad-AAD>
+    a sdo:Organization ;
+    sdo:name "Australian Antarctic Division" ;
+.
+
+<https://linked.data.gov.au/org/capad-ACT_EPSDD>
+    a sdo:Organization ;
+    sdo:name "Environment, Planning and Sustainable Development Directorate" ;
+.
+
+<https://linked.data.gov.au/org/capad-AWC>
+    a sdo:Organization ;
+    sdo:name "Australian Wildlife Conservancy" ;
+.
+
+<https://linked.data.gov.au/org/capad-AWC_BA>
+    a sdo:Organization ;
+    sdo:name "Australian Wildlife Conservancy and Birdlife Australia" ;
+.
+
+<https://linked.data.gov.au/org/capad-AWC_DAM>
+    a sdo:Organization ;
+    sdo:name "Australian Wildlife Conservancy and Dambimangari People" ;
+.
+
+<https://linked.data.gov.au/org/capad-AWC_DD>
+    a sdo:Organization ;
+    sdo:name "Australian Wildlife Conservancy and Department of Defence" ;
+.
+
+<https://linked.data.gov.au/org/capad-AWC_TLLFW>
+    a sdo:Organization ;
+    sdo:name "Australian Wildlife Conservancy and Tony and Lisette Lewis Foundation WildlifeLink" ;
+.
+
+<https://linked.data.gov.au/org/capad-AWC_YC>
+    a sdo:Organization ;
+    sdo:name "Australian Wildlife Conservancy and Yulmbu Community" ;
+.
+
+<https://linked.data.gov.au/org/capad-BHA>
+    a sdo:Organization ;
+    sdo:name "Bush Heritage Australia" ;
+.
+
+<https://linked.data.gov.au/org/capad-BHA_NTWA>
+    a sdo:Organization ;
+    sdo:name "Bush Heritage Australia and National Trust of Western Australia" ;
+.
+
+<https://linked.data.gov.au/org/capad-BRC_TAS>
+    a sdo:Organization ;
+    sdo:name "Burnie Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-CCC_TAS>
+    a sdo:Organization ;
+    sdo:name "Clarence City Council – Tasmania" ;
+.
+
+<https://linked.data.gov.au/org/capad-DAWE>
+    a sdo:Organization ;
+    sdo:name "Australian Government, Department of Climate Change, Energy, the Environment and Water" ;
+.
+
+<https://linked.data.gov.au/org/capad-DCC_TAS>
+    a sdo:Organization ;
+    sdo:name "Devonport City Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-DRC_TAS>
+    a sdo:Organization ;
+    sdo:name "Dorset Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-EAC_QLD>
+    a sdo:Organization ;
+    sdo:name "Ewamian Aboriginal Corporation" ;
+.
+
+<https://linked.data.gov.au/org/capad-EL_NSW>
+    a sdo:Organization ;
+    sdo:name "Enduring Landscapes Inc" ;
+.
+
+<https://linked.data.gov.au/org/capad-FC_NSW>
+    a sdo:Organization ;
+    sdo:name "Forestry Corporation of NSW" ;
+.
+
+<https://linked.data.gov.au/org/capad-FUA>
+    a sdo:Organization ;
+    sdo:name "Federation University Australia" ;
+.
+
+<https://linked.data.gov.au/org/capad-GCC_NSW>
+    a sdo:Organization ;
+    sdo:name "Gosford City Council – New South Wales" ;
+.
+
+<https://linked.data.gov.au/org/capad-GCC_TAS>
+    a sdo:Organization ;
+    sdo:name "Glenorchy City Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-HCR_CMA>
+    a sdo:Organization ;
+    sdo:name "Hunter Central Rivers Catchment Management Authority" ;
+.
+
+<https://linked.data.gov.au/org/capad-ILC>
+    a sdo:Organization ;
+    sdo:name "Indigenous Land Corporation" ;
+.
+
+<https://linked.data.gov.au/org/capad-IMG>
+    a sdo:Organization ;
+    sdo:name "Indigenous Management Group" ;
+.
+
+<https://linked.data.gov.au/org/capad-KNC_TAS>
+    a sdo:Organization ;
+    sdo:name "Kingborough Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-KRGC_NSW>
+    a sdo:Organization ;
+    sdo:name "Ku-ring-gai Council – New South Wales" ;
+.
+
+<https://linked.data.gov.au/org/capad-LCC_TAS>
+    a sdo:Organization ;
+    sdo:name "Launceston City Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-LILC>
+    a sdo:Organization ;
+    sdo:name "Local Indigenous Land Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-MINCA_QLD>
+    a sdo:Organization ;
+    sdo:name "Magnetic Island Nature Care Association" ;
+.
+
+<https://linked.data.gov.au/org/capad-NF_SA>
+    a sdo:Organization ;
+    sdo:name "Nature Foundation South Australia Inc" ;
+.
+
+<https://linked.data.gov.au/org/capad-NMC_TAS>
+    a sdo:Organization ;
+    sdo:name "Northern Midlands Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-NSC_QLD>
+    a sdo:Organization ;
+    sdo:name "Noosa Shire Council - Queensland" ;
+.
+
+<https://linked.data.gov.au/org/capad-NSW_OEH>
+    a sdo:Organization ;
+    sdo:name "NSW Office of Environment and Heritage" ;
+.
+
+<https://linked.data.gov.au/org/capad-NTWA>
+    a sdo:Organization ;
+    sdo:name "National Trust of Western Australia" ;
+.
+
+<https://linked.data.gov.au/org/capad-NT_PWCNT>
+    a sdo:Organization ;
+    sdo:name "Parks and Wildlife Commission of the NT" ;
+.
+
+<https://linked.data.gov.au/org/capad-QLD_DES>
+    a sdo:Organization ;
+    sdo:name "Queensland Department of Environment and Science" ;
+.
+
+<https://linked.data.gov.au/org/capad-SA_DEW>
+    a sdo:Organization ;
+    sdo:name "South Australian Department of Environment and Water" ;
+.
+
+<https://linked.data.gov.au/org/capad-SA_FRST>
+    a sdo:Organization ;
+    sdo:name "Forestry South Australia" ;
+.
+
+<https://linked.data.gov.au/org/capad-SET>
+    a sdo:Organization ;
+    sdo:name "South Endeavour Trust" ;
+.
+
+<https://linked.data.gov.au/org/capad-SHFT>
+    a sdo:Organization ;
+    sdo:name "Sydney Harbour Federation Trust" ;
+.
+
+<https://linked.data.gov.au/org/capad-SMC_TAS>
+    a sdo:Organization ;
+    sdo:name "Southern Midlands Council" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_DPIPWE>
+    a sdo:Organization ;
+    sdo:name "Tasmanian Department of Primary Industries, Parks, Water and Environment" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_HYDRO>
+    a sdo:Organization ;
+    sdo:name "Hydro Tasmania" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_PAHSMA>
+    a sdo:Organization ;
+    sdo:name "Port Arthur Historic Site Management Authority" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_PRIV>
+    a sdo:Organization ;
+    sdo:name "Private (miscellaneous) – Tasmania" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_VAR>
+    a sdo:Organization ;
+    sdo:name "Various managing authorities" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_WATER>
+    a sdo:Organization ;
+    sdo:name "TasWater" ;
+.
+
+<https://linked.data.gov.au/org/capad-TAS_WPMT>
+    a sdo:Organization ;
+    sdo:name "Wellington Park Management Trust" ;
+.
+
+<https://linked.data.gov.au/org/capad-TFN_QLD>
+    a sdo:Organization ;
+    sdo:name "Queensland Trust for Nature" ;
+.
+
+<https://linked.data.gov.au/org/capad-TFN_VIC>
+    a sdo:Organization ;
+    sdo:name "Trust for Nature Victoria" ;
+.
+
+<https://linked.data.gov.au/org/capad-TLC>
+    a sdo:Organization ;
+    sdo:name "Tasmanian Land Conservancy Inc" ;
+.
+
+<https://linked.data.gov.au/org/capad-TSRA>
+    a sdo:Organization ;
+    sdo:name "Torres Strait Regional Authority" ;
+.
+
+<https://linked.data.gov.au/org/capad-VIC_DELWP>
+    a sdo:Organization ;
+    sdo:name "Victorian Department of Environment, Land, Water and Planning" ;
+.
+
+<https://linked.data.gov.au/org/capad-WAC>
+    a sdo:Organization ;
+    sdo:name "Winangakirri Aboriginal Corporation" ;
+.
+
+<https://linked.data.gov.au/org/capad-WA_DBCA>
+    a sdo:Organization ;
+    sdo:name "Western Australian Department of Biodiversity, Conservation and Attractions" ;
+.
+
