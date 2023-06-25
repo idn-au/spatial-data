@@ -28,18 +28,20 @@ def validator():
         # (Path(__file__).parent.parent / "datasets/agil/agil.nq", "https://data.idnau.org/pid/agil"),
         # (Path(__file__).parent.parent / "datasets/asgs-is/asgs-is.nq", "https://data.idnau.org/pid/asgs-is"),
         # (Path(__file__).parent.parent / "datasets/ilm/ilm.nq", "https://data.idnau.org/pid/ilm"),
-        (Path(__file__).parent.parent / "datasets/nntt/nntt.nq", "https://data.idnau.org/pid/nntt"),
+        # (Path(__file__).parent.parent / "datasets/nntt/nntt.nq", "https://data.idnau.org/pid/nntt"),
         # (Path(__file__).parent.parent / "datasets/nsw-ab/nsw-ab.nq", "https://data.idnau.org/pid/nsw-ab"),
+        (Path(__file__).parent.parent / "datasets/apt/apt.nq", "https://data.idnau.org/pid/apt"),
     ]
     # produce n-triples
     for dataset, iri in datasets:
         print(f"Converting {dataset}")
         os.system(f"sed 's#<{iri}> \.$#.#g' {dataset} > {str(dataset).replace('.nq', '.nt')}")
 
-    # validate NT
-    for dataset, iri in datasets:
-        print(f"Validating {dataset.name}")
-        os.system(f"shacl v --shapes latest_validator.ttl --data {str(dataset).replace('.nq', '.nt')} > reports/{dataset.stem}.ttl")
+    # # validate NT
+    # for dataset, iri in datasets:
+    #     print(f"Validating {dataset.name}")
+    #     os.system("source ~/jena-source.sh")
+    #     os.system(f"shacl v --shapes latest_validator.ttl --data {str(dataset).replace('.nq', '.nt')} > reports/{dataset.stem}.ttl")
 
 
 if __name__ == "__main__":

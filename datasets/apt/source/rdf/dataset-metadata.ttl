@@ -1,0 +1,55 @@
+PREFIX : <https://data.idnau.org/pid/apt/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ds: <https://data.idnau.org/pid/apt>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://data.idnau.org/pid/spacecat>
+    dcterms:hasPart ds: ;
+.
+
+ds:
+    a dcat:Dataset ;
+    sdo:name "AIATSIS Place Thesaurus";
+    sdo:description "The AIATSIS Place Thesaurus contains headings for place names, using the Indigenous place name first wherever possible." ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral ;
+    ] ;
+    rdfs:member
+        :regions ,
+        :places ;
+    sdo:creator <https://linked.data.gov.au/org/idn> ;
+    sdo:publisher <https://linked.data.gov.au/org/idn> ;
+    sdo:dateCreated "2023-06-20"^^xsd:date ;
+    sdo:dateModified "2023-06-25"^^xsd:date ;
+    sdo:isBasedOn "https://thesaurus.aiatsis.gov.au/placename/placename.html"^^xsd:anyURI ;
+    dcterms:provenance "This dataset was extracted from the AIATSIS Place Thesaurus online (https://thesaurus.aiatsis.gov.au/placename/placename.html), a PDF copy of that content and the same content but in CSV form given to the IDN by AIATSIS" ;
+.
+
+
+:regions
+    a geo:FeatureCollection ;
+    sdo:description "Regions in the AIATSIS Place Thesaurus dataset"@en ;
+    sdo:name "Regions"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+    ] ;
+.
+
+:places
+    a geo:FeatureCollection ;
+    sdo:description "Places in the AIATSIS Place Thesaurus dataset"@en ;
+    sdo:name "Places"@en ;
+    geo:hasBoundingBox [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+    ] ;
+.

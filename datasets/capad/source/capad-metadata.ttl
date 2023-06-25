@@ -17,9 +17,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:name "Collaborative Australian Protected Areas Database (CAPAD) 2020";
     sdo:description "The Collaborative Australian Protected Areas Database (CAPAD) 2020 provides both spatial and textual information about government, Indigenous and privately protected areas for Australia, in both the marine and terrestrial environments." ;
     geo:hasBoundingBox [
-            a geo:Geometry ;
-            geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral ;
-        ] ;
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral ;
+    ] ;
     rdfs:member
         capad2020:ipa ,
         capad2020:npa ;
@@ -28,7 +28,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:dateCreated "2023-05-15"^^xsd:date ;
     sdo:dateModified "2023-05-15"^^xsd:date ;
     dcterms:provenance "This dataset was assembled from CAPAD data downloaded from DCCEEWW via data.gov.au" ;
-    dcterms:srouce "https://data.gov.au/dataset/ds-environment-9984a9fd-3dd0-4e38-bfbd-7e788fa851a1/details?q=capad%202020"^^xsd:anyURI ;
+    dcterms:source "https://data.gov.au/dataset/ds-environment-9984a9fd-3dd0-4e38-bfbd-7e788fa851a1/details?q=capad%202020"^^xsd:anyURI ;
 .
 
 
@@ -55,6 +55,16 @@ capad2020:ipa
         ] ;
 .
 
+capad2020:ipa
+    a geo:FeatureCollection ;
+    sdo:description "Indigenous Protected Area features from the CAPAD2020 Dataset"@en ;
+    sdo:name "Indigenous Protected Areas"@en ;
+    geo:hasBoundingBox [
+            a geo:Geometry ;
+            geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
+        ] ;
+.
+
 capad2020:npa
     a geo:FeatureCollection ;
     sdo:description "National Park Aboriginal features from the CAPAD2020 Dataset"@en ;
@@ -62,18 +72,5 @@ capad2020:npa
     geo:hasBoundingBox [
             a geo:Geometry ;
             geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
-        ] ;
-    prov:qualifiedAttribution
-        [
-            dcat:hadRole iso:contributor ;
-            prov:agent <https://linked.data.gov.au/org/idn>
-        ] ,
-        [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/dcceew>
-        ] ,
-        [
-            dcat:hadRole iso:originator ;
-            prov:agent <https://linked.data.gov.au/org/dcceew>
         ] ;
 .
