@@ -1,0 +1,553 @@
+Region,MapSheet,Exists
+"ACT, S NSW",I5516,True
+Arnhem Land NT,D5301,True
+Arnhem Land NT,D5305,True
+Arnhem Land NT,D5306,True
+Bamaga Qld Far North Cape York,C5411,True
+Central Arnhem Land NT,D5302,True
+Central Arnhem Land NT,C5314,False
+Central NT,E5207,True
+Central NT,E5208,True
+Central NT,E5211,True
+Central NT,E5211,True
+Central NT,E5314,True
+Central NT,F5302,True
+Central NT,F5303,True
+Central NT,F5304,True
+Central NT,F5306,True
+Central NT Tanami Desert,E5212,True
+Central NT Tanami Desert,E5215,True
+Central NT Tanami Desert,E5216,True
+Central NT Tanami Desert,E5309,True
+Central NT Tanami Desert,E5313,True
+Central NT Tanami Desert,F5203,True
+Central NT Tanami Desert,F5204,True
+Central NT Tanami Desert,F5207,True
+Central NT Tanami Desert,F5208,True
+Central NT Tanami Desert,F5211,True
+Central NT Tanami Desert,F5301,True
+Central NT Tanami Desert,F5305,True
+"Central NT Tanami Desert, North NT",E5305,True
+"Central NT, North NT",E5203,True
+Central WA,G5209,True
+Central WA Great Sandy Desert,E5213,True
+Central WA Great Sandy Desert,F5201,True
+Central WA Great Sandy Desert,F5205,True
+Central WA Great Sandy Desert,F5209,True
+Central WA Great Sandy Desert,F5210,True
+Central WA Great Sandy Desert,F5213,True
+Central WA Great Sandy Desert,F5214,True
+Central WA Tanami Desert,E5214,True
+Central WA Tanami Desert,F5202,True
+Central WA Tanami Desert,F5206,True
+Central WA Warburton,G5201,True
+Central WA Warburton,G5202,True
+Central WA Warburton,G5205,True
+Central WA Warburton,G5206,True
+Central WA Warburton,G5210,True
+Central WA Warburton,G5213,True
+Central WA Warburton,G5214,True
+E Qld,F5501,True
+E Qld,F5502,True
+E Qld,F5503,True
+E Qld,F5504,True
+E Qld,F5506,True
+E Qld,F5507,True
+E Qld,F5508,True
+E Qld,F5510,True
+E Qld,F5511,True
+E Qld,F5512,True
+E Qld,F5515,True
+E Qld,F5516,True
+E Qld,F5605,True
+E Qld,F5609,True
+E Qld,F5613,True
+E Qld,F5614,True
+E Tas,K5506,True
+E Vic,J5503,True
+E Vic Gippsland,J5506,True
+E Vic Gippsland,J5507,True
+E Vic Gippsland,J5511,False
+E Vic Gippsland,J5508,True
+E Vic Gippsland,J5510,True
+East Arnhem Land NT,D5303,True
+East Arnhem Land NT,D5304,True
+East Arnhem Land NT,D5307,True
+East Arnhem Land NT,D5311,True
+East Kimberley WA,E5201,True
+East Kimberley WA,E5205,True
+East Kimberley WA,E5210,True
+Elcho Island East Arnhem Land NT,D5303,True
+Far West SA,H5203,True
+Far West SA,H5204,True
+Far West SA,H5207,True
+Far West SA,H5208,True
+Far West SA,H5211,True
+Far West SA,H5212,True
+Far West SA,H5216,True
+Far West SA Nullarbor,H5215,True
+Gibson Desert WA,F5115,True
+Gibson Desert WA,F5116,True
+Great Sandy Desert WA,E5114,True
+Great Sandy Desert WA,E5115,True
+Great Sandy Desert WA,E5116,True
+Great Sandy Desert WA,F5102,True
+Great Sandy Desert WA,F5103,True
+Great Sandy Desert WA,F5104,True
+Great Sandy Desert WA,F5106,True
+Great Sandy Desert WA,F5107,True
+Great Sandy Desert WA,F5108,True
+Great Sandy Desert WA,F5110,True
+Great Sandy Desert WA,F5111,True
+Great Sandy Desert WA,F5112,True
+Little Sandy Desert WA,F5114,True
+Little Sandy Desert WA,G5101,True
+Little Sandy Desert WA,G5102,True
+Little Sandy Desert WA,G5103,True
+Little Sandy Desert WA,G5104,True
+Little Sandy Desert WA,G5105,True
+Little Sandy Desert WA,G5106,True
+Little Sandy Desert WA,G5107,True
+Little Sandy Desert WA,G5108,True
+Little Sandy Desert WA,G5109,True
+Little Sandy Desert WA,G5110,True
+Little Sandy Desert WA,G5111,True
+Little Sandy Desert WA,G5112,True
+Little Sandy Desert WA,G5113,True
+Little Sandy Desert WA,G5114,True
+Little Sandy Desert WA,G5115,True
+Little Sandy Desert WA,G5116,True
+Mainland North NT,D5316,False
+Mainland Qld Gulf,E5406,True
+N NSW,H5504,True
+N NSW,H5506,True
+N NSW,H5507,True
+N NSW,H5508,True
+N NSW,H5510,True
+N NSW,H5511,True
+N NSW,H5512,True
+N NSW,H5514,True
+N NSW,H5515,True
+N NSW,H5516,True
+N NSW,H5601,True
+N NSW,H5605,True
+N NSW,H5609,True
+N NSW,H5613,True
+N NSW,I5502,True
+N NSW,I5503,True
+N NSW,I5504,True
+N Vic,I5514,True
+N Vic,J5501,True
+N Vic,J5502,True
+"N Vic, SW NSW",I5513,True
+NE Qld,E5416,True
+NE Qld,E5501,True
+NE Qld,E5502,True
+NE Qld,E5505,True
+NE Qld,E5506,True
+NE Qld,E5509,True
+NE Qld,E5510,True
+NE Qld,E5513,True
+NE Qld,E5514,True
+NE Qld,E5515,True
+NE SA,G5409,True
+NE SA,G5410,True
+NE SA,G5413,True
+NE SA,G5414,True
+NE SA,H5304,True
+NE SA,H5401,True
+NE SA,H5402,True
+NE SA,H5405,True
+NE SA,H5406,True
+NE SA,H5410,True
+NE SA,H5414,True
+NE SA Flinders Ranges,H5409,True
+NE SA Flinders Ranges,H5413,True
+NE Tas,K5504,False
+North NT,D5216,True
+North NT,D5313,True
+North NT,D5315,True
+North NT,E5204,True
+North NT,E5301,True
+North NT,E5302,True
+North NT,E5303,True
+North NT,E5304,True
+North NT,E5306,True
+North NT,E5307,True
+North NT,E5308,True
+North NT,E5310,True
+North NT,E5311,True
+North NT,E5312,True
+North NT,E5312,True
+North NT,E5316,True
+North NT Roper,D5314,True
+North West Central SA,H5301,True
+North West Central SA,H5302,True
+North West Central SA,H5303,True
+NSW,I5605,True
+NSW Far S Coast,J5504,True
+NSW Far S Coast,J5508,True
+NSW N Coast,H5602,True
+NSW N Coast,H5603,False
+NSW N Coast,H5606,True
+NSW N Coast,H5607,True
+NSW N Coast,H5610,True
+NSW N Coast,H5610,True
+NSW N Coast,H5611,False
+NSW N Coast,H5614,True
+NSW N Coast,I5601,True
+NSW N Coast,I5602,True
+NSW S Coast,I5609,False
+NSW S Coast,I5613,True
+NT Top End,D5203,False
+NT Top End,D5204,True
+NT Top End,D5207,True
+NT Top End,D5208,True
+NT Top End,D5211,True
+NT Top End,D5212,True
+NT Top End,D5309,True
+NT Top End Roper,D5310,True
+NW NSW,H5404,True
+NW NSW,H5407,True
+NW NSW,H5408,True
+NW NSW,H5411,True
+NW NSW,H5412,True
+NW NSW,H5415,True
+NW NSW,H5416,True
+NW NSW,H5505,True
+NW NSW,H5509,True
+NW NSW,H5513,True
+NW NSW,I5403,True
+NW NSW,I5404,True
+NW NSW,I5501,True
+NW Tas,K5503,True
+NW Vic,I5411,True
+NW Vic,I5412,True
+NW Vic,I5415,True
+NW Vic,I5416,True
+NW Vic,J5403,True
+NW Vic,J5404,True
+"Qld Far North, NE Cape York",C5416,True
+"Qld Far North, NE Cape York, Qld Gulf",C5415,True
+Qld Far NW,E5414,True
+Qld Far NW,E5415,True
+Qld Far NW,F5401,True
+Qld Far NW,F5402,True
+Qld Far NW,F5403,True
+Qld Far NW,F5404,True
+Qld Far NW Barkly Tableland,E5413,True
+Qld Far West,F5405,True
+Qld Far West,F5406,True
+Qld Far West,F5407,True
+Qld Far West,F5408,True
+Qld Far West,F5409,True
+Qld Far West,F5410,True
+Qld Far West,F5411,True
+Qld Far West,F5412,True
+Qld Far West,F5413,True
+Qld Far West,F5414,True
+Qld Far West,F5415,True
+Qld Far West,F5416,True
+Qld Far West,F5505,True
+Qld Far West,F5509,True
+Qld Far West,F5513,True
+Qld Far West,F5514,True
+Qld Far West,G5401,True
+Qld Far West,G5402,True
+Qld Far West,G5403,True
+Qld Far West,G5404,True
+Qld Far West,G5405,True
+Qld Far West,G5406,True
+Qld Far West,G5407,True
+Qld Far West,G5408,True
+Qld Far West,G5411,True
+Qld Far West,G5412,True
+Qld Gulf,E5401,True
+Qld Gulf,E5403,True
+Qld Gulf,E5404,True
+Qld Gulf,E5405,True
+Qld Gulf,E5407,True
+Qld Gulf,E5408,True
+Qld Gulf,E5409,True
+Qld Gulf,E5410,True
+Qld Gulf,E5411,True
+Qld Gulf,E5412,True
+Qld NE Cape York,D5404,True
+Qld NE Cape York,D5408,True
+Qld NW Cape York,C5415,True
+Qld NW Cape York,D5403,True
+Qld NW Cape York,D5403,True
+Qld NW Cape York,D5407,False
+Qld NW Cape York,D5411,True
+Qld NW Cape York,D5415,True
+Qld SE Cape York,D5412,True
+Qld SE Cape York,D5416,True
+Qld SE Cape York,D5509,True
+Qld SE Cape York,D5513,True
+Qld TSI,C5407,True
+Qld TSI,C5408,True
+Qld TSI,C5411,True
+Qld TSI,C5412,True
+Qld TSI,C5505,True
+S NSW,I5512,True
+S NSW,J5503,True
+SA Central Australia,G5211,True
+SA Central Australia,G5212,True
+SA Central Australia,G5215,True
+SA Central Australia,G5216,True
+SA Central Australia,G5309,True
+SA Central Australia,G5310,True
+SA Central Australia,G5311,True
+SA Central Australia,G5312,True
+SA Central Australia,G5313,True
+SA Central Australia,G5314,True
+SA Central Australia,G5315,True
+SA Central Australia,G5316,True
+SE Central NT,F5307,True
+SE Central NT,F5308,True
+SE Central NT,F5311,True
+SE Central NT,F5312,True
+SE Central NT,G5304,True
+SE Central NT,G5308,True
+SE Central NT Simpson Desert,F5315,True
+SE Central NT Simpson Desert,F5316,True
+SE Central NT Simpson Desert,G5303,True
+SE Central NT Simpson Desert,G5307,True
+SE Qld,G5601,True
+SE Qld,G5602,True
+SE Qld,G5603,True
+SE Qld,G5605,True
+SE Qld,G5606,True
+SE Qld,G5609,True
+SE Qld,G5610,True
+SE Qld,G5613,True
+SE Qld,G5614,True
+SE Qld,G5615,True
+SE Qld,H5601,True
+SE Qld,H5602,True
+SE Qld,H5603,False
+SE SA,I5312,True
+SE SA,I5316,True
+SE SA,I5401,True
+SE SA,I5402,True
+SE SA,I5405,True
+SE SA,I5406,True
+SE SA,I5409,True
+SE SA,I5410,True
+SE SA,I5413,True
+SE SA,I5414,True
+SE SA,J5402,True
+SE SA,J5406,True
+SE Tas,K5508,False
+SE WA,H5103,True
+SE WA,H5106,True
+SE WA,H5107,True
+SE WA,H5108,True
+SE WA,H5110,True
+SE WA,H5111,True
+SE WA,H5112,True
+SE WA,H5113,True
+SE WA,H5114,True
+SE WA,H5115,True
+SE WA,H5201,True
+SE WA,H5202,True
+SE WA,H5205,True
+SE WA,H5206,True
+SE WA,H5209,True
+SE WA,H5210,True
+SE WA,I5101,True
+SE WA,I5103,True
+SE WA,I5105,True
+SE WA,I5106,True
+SE WA,I5107,True
+SE WA Goldfields,H5101,True
+SE WA Goldfields,H5102,True
+SE WA Goldfields,H5105,True
+SE WA Goldfields,H5109,True
+SE WA Goldfields,H5113,True
+SE WA Goldfields,I5102,True
+SE WA Great Victoria Desert,H5104,True
+SE WA Nullarbor,H5213,True
+SE WA Nullarbor,H5214,True
+SE WA Nullarbor,I5104,True
+SE WA Nullarbor,I5201,False
+SE WA Nullarbor,I5201,False
+South Central NT,F5212,True
+South Central NT,F5215,True
+South Central NT,F5216,True
+South Central NT,F5309,True
+South Central NT,F5310,True
+South Central NT,F5313,True
+South Central NT,F5314,True
+South Central NT,G5203,True
+South Central NT,G5204,True
+South Central NT,G5207,True
+South Central NT,G5208,True
+South Central NT,G5301,True
+South Central NT,G5302,True
+South Central NT,G5305,True
+South Central NT,G5306,True
+SW NSW,I5407,True
+SW NSW,I5408,True
+SW NSW,I5411,True
+SW NSW,I5412,True
+SW NSW,I5416,True
+SW NSW,I5505,True
+SW NSW,I5506,True
+SW NSW,I5507,True
+SW NSW,I5508,True
+SW NSW,I5509,True
+SW NSW,I5510,True
+SW NSW,I5511,True
+SW NSW,I5513,True
+SW NSW,I5514,True
+SW NSW,I5515,True
+SW Qld,G5415,True
+SW Qld,G5416,True
+SW Qld,G5501,True
+SW Qld,G5502,True
+SW Qld,G5503,True
+SW Qld,G5504,True
+SW Qld,G5505,True
+SW Qld,G5506,True
+SW Qld,G5507,True
+SW Qld,G5508,True
+SW Qld,G5509,True
+SW Qld,G5510,True
+SW Qld,G5511,True
+SW Qld,G5512,True
+SW Qld,G5513,True
+SW Qld,G5514,True
+SW Qld,G5515,True
+SW Qld,G5516,True
+SW Qld,H5403,True
+SW Qld,H5404,True
+SW Qld,H5501,True
+SW Qld,H5502,True
+SW Qld,H5503,True
+SW Qld,H5504,True
+SW Tas,K5507,True
+SW WA,H5001,True
+SW WA,H5002,True
+SW WA,H5003,True
+SW WA,H5004,True
+SW WA,H5005,True
+SW WA,H5006,True
+SW WA,H5007,True
+SW WA,H5008,True
+SW WA,H5009,True
+SW WA,H5010,True
+SW WA,H5011,True
+SW WA,H5012,True
+SW WA,H5014,True
+SW WA,H5015,True
+SW WA,H5016,True
+SW WA,I5002,True
+SW WA,I5003,True
+SW WA,I5004,True
+SW WA,I5005,True
+SW WA,I5006,True
+SW WA,I5007,True
+SW WA,I5008,True
+SW WA,I5009,False
+SW WA,I5010,True
+SW WA,I5011,True
+SW WA,I5012,True
+SW WA,I5014,False
+SW WA,I5015,False
+Tas Bass Strait,J5515,False
+Tas Bass Strait,K5501,True
+Tas Bass Strait,K5502,False
+Vic,J5505,True
+Vic,J5509,True
+"Victoria River, North NT",D5215,True
+W Tas,K5505,False
+W Vic,J5407,True
+W Vic,J5408,True
+W Vic,J5411,False
+W Vic,J5412,True
+WA,E5113,True
+WA East Kimberley,D5205,True
+WA East Kimberley,D5209,True
+WA East Kimberley,D5210,True
+WA East Kimberley,D5214,True
+WA East Kimberley,D5213,True
+WA East Kimberley,D5214,True
+WA East Kimberley,E5202,True
+WA East Kimberley,E5206,True
+WA East Kimberley,E5209,True
+WA East Pilbara,F5004,True
+WA East Pilbara,F5007,True
+WA East Pilbara,F5008,True
+WA East Pilbara,F5012,True
+WA East Pilbara,F5016,True
+WA East Pilbara,F5101,True
+WA East Pilbara,F5105,True
+WA East Pilbara,F5109,True
+WA East Pilbara,F5113,True
+"WA Fitzroy River, West Kimberley",E5111,True
+"WA Fitzroy River, West Kimberley",E5112,True
+WA Gascoyne / Murchison,G4908,False
+WA Gascoyne / Murchison,G4912,True
+WA Gascoyne / Murchison,G5005,True
+WA Gascoyne / Murchison,G5006,True
+WA Gascoyne / Murchison,G5007,True
+WA Gascoyne / Murchison,G5008,True
+WA Gascoyne / Murchison,G5009,True
+WA Gascoyne / Murchison,G5010,True
+WA Gascoyne / Murchison,G5011,True
+WA Gascoyne / Murchison,G5012,True
+WA Gascoyne / Murchison,G5013,True
+WA Gascoyne / Murchison,G5014,True
+WA Gascoyne / Murchison,G5015,True
+WA Gascoyne / Murchison,G5016,True
+WA South Pilbara / Gascoyne,F5004,True
+WA South Pilbara / Gascoyne,G4904,True
+WA South Pilbara / Gascoyne,G5001,True
+WA South Pilbara / Gascoyne,G5002,True
+WA South Pilbara / Gascoyne,G5003,True
+WA West Kimberley,D5108,False
+WA West Kimberley,D5111,False
+WA West Kimberley,D5112,True
+WA West Kimberley,D5115,True
+WA West Kimberley,D5116,True
+WA West Kimberley,E5102,True
+WA West Kimberley,E5103,True
+WA West Kimberley,E5104,True
+WA West Kimberley,E5106,True
+WA West Kimberley,E5107,True
+WA West Kimberley,E5108,True
+WA West Kimberley,E5110,True
+WA West Pilbara,F4912,False
+WA West Pilbara,F4916,True
+WA West Pilbara,F5002,True
+WA West Pilbara,F5003,True
+WA West Pilbara,F5005,True
+WA West Pilbara,F5006,True
+WA West Pilbara,F5009,True
+WA West Pilbara,F5010,True
+WA West Pilbara,F5011,True
+WA West Pilbara,F5013,True
+WA West Pilbara,F5014,True
+WA West Pilbara,F5015,True
+West Arnhem Land NT,C5313,True
+West SA,H5305,True
+West SA,H5306,True
+West SA,H5307,True
+West SA,H5308,True
+West SA,H5309,True
+West SA,H5310,True
+West SA,H5311,True
+West SA,H5312,True
+West SA,H5313,True
+West SA,H5314,True
+West SA,H5315,True
+West SA,H5316,True
+West SA,I5301,True
+West SA,I5302,True
+West SA,I5303,True
+West SA,I5304,True
+West SA,I5306,True
+West SA,I5307,True
+West SA,I5308,True
+West SA,I5311,True
