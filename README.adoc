@@ -68,16 +68,24 @@ The contents of this repository is licensed under Creative Commons 4.0 Internati
 
 All content is &copy; Indigenous Data Network, 2022
 
-== Contacts
+== Contact
 
-Initial technical development of this work is being undertaken by the following, for the Indigenous Data Network:
+For technical enquiries:
 
-**Sandra Silcot** +
-*Data Custodian* +
-University of Melbourne +
+**Jamie Feiss** +
+*Data Infrastructure Developer* +
 Indigenous Data Network +
+University of Melbourne +
+jamie.feiss@unimelb.edu.au
 
-**Nicholas J. Car** +
-*Data Architect* +
-https://kurrawong.net[Kurrawong AI] +
-nick@kurrawong.net
+For policy:
+
+**Levi Murray** +
+*Strategic Data Manager* +
+Indigenous Data Network +
+University of Melbourne +
+levi.murray@unimelb.edu.au
+
+_Owner Organisation_ +
+*Indigenous Data Network* +
+https://idnau.org
