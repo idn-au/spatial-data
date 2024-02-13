@@ -1,3 +1,4 @@
 .DS_Store
 .idea/
 /datasets/apt/source/250k_MapSheetDataIndex/
+**/__pycache__/
